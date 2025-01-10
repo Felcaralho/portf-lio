@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Designer e Desenvolvedora Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        #bg-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 1rem;
+            display: block;
+        }
+
+        section {
+            background: rgba(0, 0, 0, 0.6);
+            margin: 1rem auto;
+            padding: 2rem;
+            border-radius: 8px;
+            max-width: 800px;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .project-item {
+            background-color: #fff;
+            color: #000;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .project-item:hover {
+            transform: scale(1.05);
+        }
+
+        .project-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .project-item h3 {
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <img src="img/imge.jpg" alt="Imagem de fundo" id="bg-image">
+
+    <div class="content">
+        <header>
+            <h1>Tainara</h1>
+            <p>Web Designer e Desenvolvedora Web</p>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <p>Olá! Sou uma Web Designer e Desenvolvedora Web apaixonada por criar sites modernos e criativos. Meu trabalho é transformar suas ideias em realidade digital.</p>
+        </section>
+        <section id="servicos">
+            <h2>Serviços</h2>
+            <ul>
+                <li>Design de Websites</li>
+                <li>Desenvolvimento Front-End</li>
+                <li>UX/UI Design</li>
+                <li>Criação de Slides e Trabalhos ABNT</li>
+
+            </ul>
+        </section>
+        <section id="portfolio">
+            <h2>Portfólio</h2>
+            <p>Confira alguns dos meus projetos mais recentes.</p>
+            <div class="portfolio-grid">
+                <div class="project-item">
+                    <img src="img/slide" alt="Projeto 1">
+                    <h3>Slides e Trabalhos</h3>
+                    <p>Desenvolvi slides criativos e trabalhos acadêmicos com formatação ABNT, sempre com um toque de originalidade e profissionalismo..</p>
+                </div>
+                <div class="project-item">
+                    <img src="img/Site para link na bio blogueiro fotográfico em Verde e branco .png" alt="Projeto 2">
+                    <h3>Sites</h3>
+                    <p>Criação de sites personalizados e modernos que atendem às necessidades e expectativas dos clientes. Cada projeto é desenvolvido com foco em design responsivo e funcionalidade intuitiva</p>
+                </div>
+                <div class="project-item">
+                    <img src="img/eh.jpg" alt="Projeto 3">
+                    <h3>identidade Visual</h3>
+                    <p>Além dos projetos de slides e sites, ofereço serviços completos de identidade visual, garantindo uma aparência uniforme e profissional para marcas e empresas.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Entre em contato para discutir seu próximo projeto!</p>
+            <form>
+                <label for="nome">Whatsapp: (34) 99738-7047</label>
+            </form>
+        </section>
+        <footer>
+            <p>© 2025 Tainara Pereira Mendes</p>
+        </footer>
+    </div>
+</body>
+</html>
